@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -36,7 +35,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: #151515 url("../images/bkg.png") 0 0;
   width: 100%;
   border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
@@ -88,7 +87,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  color: #151515;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -245,3 +244,40 @@ a {
 .cf {
   zoom:1;
 }
+
+/** Social Button CSS **/
+
+.social-btns .social-btn {
+  border-radius: 5px;
+}
+
+.social-btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0.5em;
+  width: 4em;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  outline: none;
+  text-align: center;
+}
+
+.social-btn .fa {
+  line-height: 50px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.social-btn:active, .social-btn:hover{
+  position: relative;
+  top: 1px;
+  box-shadow: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.social-btn.github      { background: #444444; }
+.social-btn.drupal      { background: #0086CA; }
+.social-btn.linkedin    { background: #4875B4; }
+.social-btn.twitter     { background: #55ACEE; }
+.social-btn.facebook    { background: #3B5998; }
+.social-btn.email       { background: #7BBF6A; }
